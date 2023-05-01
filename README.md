@@ -1,7 +1,7 @@
 # NoSQL_Spring2023_Final_Project
 
 <p align="center">
-  <img width="400" height="400" src="https://techcrunch.com/wp-content/uploads/2020/02/cypher_graph_v2a.png">
+  <img width="600" height="400" src="https://techcrunch.com/wp-content/uploads/2020/02/cypher_graph_v2a.png">
 </p>
 
 ## Objective
