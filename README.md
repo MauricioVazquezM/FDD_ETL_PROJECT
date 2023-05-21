@@ -1,7 +1,7 @@
 # NoSQL_Spring2023_Final_Project
 
 <p align="center">
-  <img width="600" height="400" src="https://lh5.googleusercontent.com/xpZ0uNADaHiN-ik-tBrPoZOo5ZDjGu1smmrN_4ZTSsKOJsSO-RTQJ8WmzO5cMbz9ofGb8n00PuOUxBUY534mRYlOV2JiIK2ig1JpUi76w5e0zviP4at-QxBD2EEALZc8EaI893T33hudidcqXg9f6g">
+  <img width="600" height="600" src="https://lh5.googleusercontent.com/xpZ0uNADaHiN-ik-tBrPoZOo5ZDjGu1smmrN_4ZTSsKOJsSO-RTQJ8WmzO5cMbz9ofGb8n00PuOUxBUY534mRYlOV2JiIK2ig1JpUi76w5e0zviP4at-QxBD2EEALZc8EaI893T33hudidcqXg9f6g">
 </p>
 
 ## Objective
