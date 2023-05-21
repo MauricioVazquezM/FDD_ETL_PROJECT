@@ -6,7 +6,7 @@
 
 ## Objective
 
-That the students show the understanding and the ability to manage the different databases that we saw in the semester, as well as the concepts related to API's, ETL's, etc.
+Show the understanding and the ability to manage the different databases that we saw in the semester, as well as the concepts related to API's, ETL's, etc.
 
 ## Approach
 
