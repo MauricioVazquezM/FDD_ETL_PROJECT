@@ -1,7 +1,7 @@
 # NoSQL_Spring2023_Final_Project
 
 <p align="center">
-  <img width="800" height="500" src="https://static.vecteezy.com/system/resources/previews/020/118/322/original/harrypotter-logo-free-download-free-vector.jpg">
+  <img width="800" height="300" src="https://static.vecteezy.com/system/resources/previews/020/118/322/original/harrypotter-logo-free-download-free-vector.jpg">
 </p>
 
 
@@ -50,6 +50,6 @@ Explicacion del query aqui:
 ## Queries a Neo4j
 
 Explicacion del query aqui:
-```javascript
+```cypher
 
 ```
