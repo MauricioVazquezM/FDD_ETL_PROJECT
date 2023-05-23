@@ -17,3 +17,7 @@ Look for some API that attracts the attention of the team, with this API, connec
 The project must be as reproducible as possible, so a complete repository must be delivered on github, with the upload scripts and instructions on how to use the implemented utilities.
 
 In addition, at least 3 interesting queries are required with respect to each database (6 in total), which explain a little more the phenomenon that the database is representing.
+
+#+begin_src js
+db.restaurants.find({},{"restaurant_id":1,"name":1,"borough":1,"cuisine":1})
+#+end_src
