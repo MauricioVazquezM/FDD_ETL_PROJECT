@@ -1,7 +1,7 @@
 # NoSQL_Spring2023_Final_Project
 
 <p align="center">
-  <img width="600" height="600" src="https://lh5.googleusercontent.com/xpZ0uNADaHiN-ik-tBrPoZOo5ZDjGu1smmrN_4ZTSsKOJsSO-RTQJ8WmzO5cMbz9ofGb8n00PuOUxBUY534mRYlOV2JiIK2ig1JpUi76w5e0zviP4at-QxBD2EEALZc8EaI893T33hudidcqXg9f6g">
+  <img width="600" height="600" src="https://www.clipartmax.com/png/middle/319-3198755_harry-potter-logo-png.png">
 </p>
 
 
@@ -28,7 +28,28 @@ El proyecto debe ser lo más reproducible posible. Por lo cual, se debe de entre
 
 ## Inserción a MongoDB
 
-Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](link aqui). Por medio de la libreria requests, hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
+Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](link aqui). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
 
 ## Extract - Transform - Load ( ETL )
 
+
+## Inserción a Neo4j
+
+
+
+
+# Queries
+
+## Queries a MongoDB
+
+Explicacion del query aqui:
+```javascript
+
+```
+
+## Queries a Neo4j
+
+Explicacion del query aqui:
+```javascript
+
+```
