@@ -4,8 +4,17 @@
   <img width="800" height="300" src="https://static.vecteezy.com/system/resources/previews/020/118/322/original/harrypotter-logo-free-download-free-vector.jpg">
 </p>
 
+</br>
+
+## Equipo
+
+- [Mariana Luna Rocha](https://github.com/MarianaMoons), estudiante de la Licencitura en Ciencia de Datos en el ITAM.
+- [Carlos Elías Rivera Mercado](https://github.com/Carlos-Elias-Riv), estudiante de la Licencitura en Ciencia de Datos en el ITAM.
+- [Mauricio Vázquez Moran](https://github.com/MauricioVazquezM), estudiante de la Licencitura en Ciencia de Datos y la Licenciatura en Actuaría en el ITAM.
+  
 
 
+</br>
 
 ## Problema a solucionar
 
@@ -30,8 +39,6 @@ El proyecto debe ser lo más reproducible posible. Por lo cual, se debe de entre
 ### Inserción a MongoDB
 
 Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](link aqui). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
-
-</br>
 
 ### Extract - Transform - Load ( ETL )
 
