@@ -42,14 +42,35 @@ Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos
 
 ## Queries a MongoDB
 
-Explicacion del query aqui:
+Explicacion del query1 aqui:
 ```javascript
 
 ```
 
+Explicacion del query2 aqui:
+```javascript
+
+```
+
+Explicacion del query3 aqui:
+```javascript
+
+```
+
+
 ## Queries a Neo4j
 
-Explicacion del query aqui:
+Explicacion del query1 aqui:
+```cypher
+
+```
+
+Explicacion del query2 aqui:
+```cypher
+
+```
+
+Explicacion del query3 aqui:
 ```cypher
 
 ```
