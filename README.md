@@ -1,7 +1,7 @@
 # NoSQL_Spring2023_Final_Project
 
 <p align="center">
-  <img width="600" height="600" src="https://www.clipartmax.com/png/middle/319-3198755_harry-potter-logo-png.png">
+  <img width="800" height="500" src="https://static.vecteezy.com/system/resources/previews/020/118/322/original/harrypotter-logo-free-download-free-vector.jpg">
 </p>
 
 
