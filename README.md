@@ -227,10 +227,12 @@ match (c: Characters)-[:BELONGS_TO]->(h:Houses), (c)-[:IS_A]->(s:Species)
 where c.eye_color = "blue" and s.especie = "human"
 return c.name as charactername, c.eye_color as eyeColor, h.casas as houseName, s.especie as speciesName
 ```
-
-Explicacion del query3 aqui:
+Query que cuenta por casa los humanos que siguen vivos y los ordena de manera ascendente:
 ```cypher
-
+match (c:Characters)-[:BELONGS_TO]->(h:Houses), (c:Characters)-[:IS_A]->(s:Species)
+where c.died <> "missing" and s.especie = "human"
+return c.house as casa, count(c.house) as house_count
+order by house_count
 ```
 
 </br>
