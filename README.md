@@ -53,9 +53,13 @@ Para la extraccion, transformacion y carga de los datos obtenidos de la API, se 
 7. Limpiamos los nombres de nuestras variables, es decir, los nombres de nuestras columnas. En este mismo paso, revisamos los tipos de datos que tenemos en las diferentes variables para su transformacion en el correcto data type.
 8. Revisamos los na's que contiene el dataframe. Utilizamos la estrategia de sustituir los na's por el valor de 'missing'. Bajo este mismo paso y con miras de hacer una base de tipo grafo en Neo4j, sustituimos los na's, en algunas variables, por valores provenientes de otros caracteres y, de esta manera, poder crear los grafos para su posterior carga en Neo4j.
 9. Con la utilizacion de una funcion auxiliar, retiramos los caracteres no desados de las cadenas de texto. Asimismo, normalizamos las cadenas de string para que en la posteriedad el analisis de esta base de datos sea con mayor facilidad. 
+10. Se instancian las casas, generos y blood status de los personajes faltantes. Esto con el fin de poder visualizar y poder especializar los queries en Neo4j y MongoDB. En este mismo paso
+11. Se instancian los csv para su posterior insercion en Neo4j.
 
 
 ### Insercion a Neo4j
+
+Correr los siguientes comandos en la terminal de Neo4j para la insercion de los documentos:
 
 #### Carga de los csv
 
@@ -101,24 +105,34 @@ set n = row
 
 #### Haciendo las relaciones
 
-Insercion house:
-```cypher
+Correr los siguientes comandos en la terminal de Neo4j para el establecimiento de las relaciones del grafo:
 
+Insercion de la relacion de characters con sus respectivas casas:
+```cypher
+match (c:Characters), (h: Houses)
+where c.idhouses = h.idcasas
+create (c)-[:BELONGS_TO]->(h)
 ```
 
-Insercion genero:
+Insercion de la relacion de characters con su blood status:
 ```cypher
-
+match (c:Characters), (b: Blood_status)
+where c.idsangre = b.idsangre
+create (c)-[:HAS_BLOOD_STATUS_OF]->(b)
 ```
 
-Insercion especie:
+Insercion de la relacion de characters con su genero:
 ```cypher
-
+match (c:Characters), (g:Genres)
+where c.idgender = g.idgen
+create (c)-[:IS]->(g)
 ```
 
-Insercion blood status:
+Insercion de la relacion de characters con su especie:
 ```cypher
-
+match (c:Characters), (s:Species)
+where c.idspecies=s.idsp
+create (c)-[:IS_A]->(s)
 ```
 
 </br>
