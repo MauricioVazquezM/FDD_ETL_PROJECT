@@ -57,7 +57,48 @@ Para la extraccion, transformacion y carga de los datos obtenidos de la API, se 
 
 ### Insercion a Neo4j
 
+#### Carga de los csv
+Carga de house csv:
+```cypher
 
+```
+
+Carga de genero csv:
+```cypher
+
+```
+
+Carga de especie csv:
+```cypher
+
+```
+
+Carga de blood status csv:
+```cypher
+
+```
+
+#### Haciendo las relaciones
+
+Insercion house:
+```cypher
+
+```
+
+Insercion genero:
+```cypher
+
+```
+
+Insercion especie:
+```cypher
+
+```
+
+Insercion blood status:
+```cypher
+
+```
 
 </br>
 
