@@ -143,17 +143,72 @@ create (c)-[:IS_A]->(s)
 
 Explicacion del query1 aqui:
 ```javascript
-
+db.char.aggregate([
+  {
+    $match: {
+      $or: [
+        { "attributes.species": "Human", "attributes.gender": "Male" },
+        { "attributes.species": "Elf", "attributes.gender": "Female" }
+      ],
+      "attributes.height": { $exists: true }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      name: "$attributes.name",
+      species: "$attributes.species",
+      gender: "$attributes.gender",
+      height: "$attributes.height"
+    }
+  },
+  {
+    $sort: { height: -1 }
+  }
+])
 ```
 
 Explicacion del query2 aqui:
 ```javascript
-
+db.char.aggregate([
+  {
+    $match: {
+      "attributes.nationality": { $exists: true, $ne: "" },
+      "attributes.species": { $ne: "House-elf" }
+    }
+  },
+  {
+    $group: {
+      _id: "$attributes.nationality",
+      characterCount: { $sum: 1 }
+    }
+  },
+  {
+    $sort: { characterCount: -1 }
+  }
+])
 ```
 
 Explicacion del query3 aqui:
 ```javascript
-
+db.char.aggregate([
+  {
+    $match: {
+      "attributes.eye_color": { $exists: true, $ne: "" },
+      "attributes.species": "Human",
+      "attributes.house": { $in: ["Ravenclaw", "Slytherin", "Hufflepuff", "Gryffindor"] }
+    }
+  },
+  {
+    $group: {
+      _id: "$attributes.eye_color",
+      characterCount: { $sum: 1 }
+    }
+  },
+  {
+    $sort: { characterCount: -1 }
+  }
+])
 ```
 
 
