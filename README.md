@@ -141,7 +141,7 @@ create (c)-[:IS_A]->(s)
 
 ### Queries a MongoDB
 
-Explicacion del query1 aqui:
+Query que obtiene las alturas de todos los personajes que sean hombres humanos o las mujeres elfas. Ademas, ordena descendientemente:
 ```javascript
 db.char.aggregate([
   {
@@ -168,7 +168,7 @@ db.char.aggregate([
 ])
 ```
 
-Explicacion del query2 aqui:
+Query para obtener cuantos elfos de casa hay por nacionalidad:
 ```javascript
 db.char.aggregate([
   {
@@ -189,7 +189,7 @@ db.char.aggregate([
 ])
 ```
 
-Explicacion del query3 aqui:
+Query que cuenta los humanos que asistieron a Howarts y luego por su color de ojos los agrupa con su correspodiente contador:
 ```javascript
 db.char.aggregate([
   {
@@ -214,14 +214,18 @@ db.char.aggregate([
 
 ### Queries a Neo4j
 
-Explicacion del query1 aqui:
+Query que cuenta por casas cuantos miembros tiene cada casa:
 ```cypher
-
+match (c:Characters)-[:BELONGS_TO]->(h:Houses)
+return c.house as house, count(c.house) as house_count
+order by house;
 ```
 
-Explicacion del query2 aqui:
+Query que cuenta, por cada casa, los humanos que tiene ojos azules:
 ```cypher
-
+match (c: Characters)-[:BELONGS_TO]->(h:Houses), (c)-[:IS_A]->(s:Species)
+where c.eye_color = "blue" and s.especie = "human"
+return c.name as charactername, c.eye_color as eyeColor, h.casas as houseName, s.especie as speciesName
 ```
 
 Explicacion del query3 aqui:
