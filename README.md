@@ -178,4 +178,9 @@ Explicacion del query3 aqui:
 
 ## Instrucciones
 
+Para la ejecucion del proyecto se tiene que seguir las siguientes instrucciones:
+
+1. Correr el script ['Potter'](CODE/Potter.ipynb) para la extraccion, transformacion y carga de los datos en MongoDB.
+2. Abrir terminal de Neo4j y correr los comandos de insercion en Neo4j de los csv [Carga de los csv](#carga-de-los-csv). Posteriormente, insertar las relaciones del grafo de la seccion [Haciendo las relaciones](#haciendo-las-relaciones).
+3. Si se quiere, correr los queries propuestos en [Queries](#queries) para mas informacion sobre la API. Se tiene 3 queries para MongoDB y 3 queries para Neo4j.
 
