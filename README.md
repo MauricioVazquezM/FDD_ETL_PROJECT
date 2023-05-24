@@ -38,7 +38,7 @@ El proyecto debe ser lo más reproducible posible. Por lo cual, se debe de entre
 
 ### Insercion a MongoDB
 
-Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](CODE/Potter.ipynb). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
+Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](CODE/PotterScript.py). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
 
 ### Extract - Transform - Load ( ETL )
 
@@ -241,7 +241,7 @@ order by house_count
 
 Para la ejecucion del proyecto se tiene que seguir las siguientes instrucciones:
 
-1. Correr el script ['Potter'](CODE/Potter.ipynb) para la extraccion, transformacion y carga de los datos en MongoDB.
+1. Correr el script ['PotterScript'](CODE/PotterScript.py) para la extraccion, transformacion y carga de los datos en MongoDB.
 2. Abrir terminal de Neo4j y correr los comandos de insercion en Neo4j de los csv [Carga de los csv](#carga-de-los-csv). Posteriormente, insertar las relaciones del grafo de la seccion [Haciendo las relaciones](#haciendo-las-relaciones).
 3. Si se quiere, correr los queries propuestos en [Queries](#queries) para mas informacion sobre la API. Se tiene 3 queries para MongoDB y 3 queries para Neo4j.
 

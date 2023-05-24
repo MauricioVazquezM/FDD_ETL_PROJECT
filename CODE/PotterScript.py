@@ -47,6 +47,7 @@ for i in range(41):
     insert_result = my_collection.insert_many(my_data)
 # # Print the data
 # print(data)
+print('Extraccion y carga lista en MongoDB')
 
 
 '''
@@ -62,6 +63,7 @@ pipeline = [
     {"$out": "char"}
 ]
 db.characters.aggregate(pipeline)
+print('Ids desduplicados')
 
 
 '''
@@ -112,6 +114,7 @@ documents_list = [doc for doc in documents]
 # Guardando en json
 with open('exported_data.json', 'w') as file:
     json.dump(documents_list, file, indent=4, cls=JSONEncoder)
+print('Absorbiendo los documentos listos de MongoDB para hacer la transformacion en python')
 
 
 '''
@@ -134,6 +137,7 @@ Al utilizar la funcion de 'json_normalize' de la libreria pandas,
 metemos los archivos JSON a un dataframe para su transformacion.
 '''
 df = pd.json_normalize(data)
+print('Data normalizada')
 
 # Tirando las columnas que no nos seran de utilidad.
 new_df = df.drop(['_id','meta.pagination.current', 'meta.pagination.next',
@@ -142,6 +146,7 @@ new_df = df.drop(['_id','meta.pagination.current', 'meta.pagination.next',
        'links.last', 'meta.pagination.first', 'meta.pagination.prev',
        'links.first', 'links.prev','attributes.image',
        'attributes.wiki','attributes.height', 'attributes.weight'],axis = 1)
+print('Columnas de metadatos dropeadas')
 
 # Cambiamos el nombre de las columnas, eliminando 'attribute.'
 columnas = new_df.columns.tolist()
@@ -178,7 +183,7 @@ def ponerCasa(cell):
         if cell is None or cell is pd.NA or cell == 'Unknown':
             # print("Entre a este caso")
             var = random.choice(lista) 
-            print(var)
+            # print(var)
             return var
         else:
             return cell
@@ -239,6 +244,7 @@ def quitar(cell):
     return resp
 
 char = char.apply(quitar)
+print('Data limpiada y trandormada a un formato mas facil para su manejo')
 
 
 '''
@@ -260,6 +266,7 @@ dict_casas= {'gryffindor': 'g', 'hufflepuff': 'h', 'ravenclaw': 'r', 'slytherin'
              'hogwarts school of witchcraft and wizardry': 'h', 'did not attend hogwarts' : 'd'}
 
 char['idhouses'] = char['house'].map(dict_casas)
+print('Casas asignado')
 
 
 '''
@@ -288,7 +295,7 @@ char['idgender'] = char['gender'].map(dictgen)
 
 lista3 = list(char['species'].unique()) 
 idspecies = ["sp"+str(i) for i in range(len(lista3))]
-intermediario3 = {'especie': lista3, 'idsp': idsgen}
+intermediario3 = {'especie': lista3, 'idsp': idspecies}
 
 inter3 = pd.DataFrame(intermediario3)
 
@@ -302,6 +309,7 @@ for pos, elem in enumerate(lista3):
     dictsp[elem] = 'sp' + str(pos)
 
 char['idspecies'] = char['species'].map(dictsp)
+print('Especies asignado')
 
 
 '''
@@ -332,6 +340,7 @@ intersangre = {'sangre': listasangre, 'idsangre': idsangre}
 char['idsangre'] = char['blood_status'].map(dictsangre)
 
 inter4 = pd.DataFrame(intersangre)
+print('Blood status asignado')
 
 
 '''
@@ -352,3 +361,4 @@ en Neo4j para el grafo.
 
 # CSV donde tenemos los ids del genero, intermediario 4
 #inter4.to_csv("bs_ids", sep = '\t', encoding='utf-8', index=False, header = True)
+print('CSVs listos')
