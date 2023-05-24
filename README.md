@@ -34,17 +34,28 @@ El proyecto debe ser lo más reproducible posible. Por lo cual, se debe de entre
 
 </br>
 
-## Implementación
+## Implementacion
 
-### Inserción a MongoDB
+### Insercion a MongoDB
 
 Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['Potter'](link aqui). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
 
 ### Extract - Transform - Load ( ETL )
 
+Para la extraccion, transformacion y carga de los datos obtenidos de la API, se siguieron los siguientes pasos en la limpieza de datos:
+
+1. Se extraen los datos apoyandonos en la libreria 'request'. Por medio de sencillas iteraciones, iteramos sobre las diferentes paginas de la API extrayendo los documentos tipos 'json'. Obtenemos como total 4066 documentos, correspondientes a los personajes de la saga Harry Potter.
+2. Hacemos una primera importacion a MongoDB, bajo el nombre de la coleccion 'characters' en la base de datos 'potter'.
+3. Apoyandonos de un pipeline desde python hacia MongoDB, limpiamos los id de los personajes para no tener problemas en la posterioridad del ETL.
+4. Habiendo mandado los documentos a MongoDB, absorbemos los archivos 'json' en python y verificamos que esten correctos los id.
+5. Por medio de la libreria 'pandas', mandamos los documentos a un dataframe para simplificar y agilizar su transformacion.
+6. Revisamos las columnas del dataframe y soltamos las columnas que no nos son de utilidad. En otras palabras, dropeamos los metadatos que venian con los documentos desde la API.
+7. Limpiamos los nombres de nuestras variables, es decir, los nombres de nuestras columnas. En este mismo paso, revisamos los tipos de datos que tenemos en las diferentes variables para su transformacion en el correcto data type.
+8. Revisamos los na's que contiene el dataframe. Utilizamos la estrategia de sustituir los na's por el valor de 'missing'. Bajo este mismo paso y con miras de hacer una base de tipo grafo en Neo4j, sustituimos los na's, en algunas variables, por valores provenientes de otros caracteres y, de esta manera, poder crear los grafos para su posterior carga en Neo4j.
+9. Con la utilizacion de una funcion auxiliar, retiramos los caracteres no desados de las cadenas de texto. Asimismo, normalizamos las cadenas de string para que en la posteriedad el analisis de esta base de datos sea con mayor facilidad. 
 
 
-### Inserción a Neo4j
+### Insercion a Neo4j
 
 
 
@@ -86,3 +97,9 @@ Explicacion del query3 aqui:
 ```cypher
 
 ```
+
+</br>
+
+## Instrucciones
+
+###
