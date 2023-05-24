@@ -1,0 +1,25 @@
+especie	idsp
+missing	g0
+female	g1
+male	g2
+male  most likely 	g3
+males, females	g4
+male, female	g5
+males	g6
+male  likely 	g7
+females	g8
+four males, one female	g9
+unknown	g10
+males and females	g11
+female, male	g12
+male  as depicted in the tales of beedle the bard 	g13
+male  possibly 	g14
+male  father , female  mother 	g15
+female  likely 	g16
+3 males, 9 unknown gender	g17
+male, 2 females	g18
+female  mother , unknown  baby 	g19
+at least one boy	g20
+mixed	g21
+two girls, one boy	g22
+females, males	g23
