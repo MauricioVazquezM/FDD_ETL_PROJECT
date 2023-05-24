@@ -58,24 +58,45 @@ Para la extraccion, transformacion y carga de los datos obtenidos de la API, se 
 ### Insercion a Neo4j
 
 #### Carga de los csv
+
 Carga de house csv:
 ```cypher
-
+load csv with headers from "https://raw.githubusercontent.com/MauricioVazquezM/NoSQL_Spring2023_Final_Project/main/DATA/houses_ids.csv" as row
+fieldterminator '\t'
+create (n: Houses)
+set n = row
 ```
 
 Carga de genero csv:
 ```cypher
-
+load csv with headers from "https://raw.githubusercontent.com/MauricioVazquezM/NoSQL_Spring2023_Final_Project/main/DATA/gender_ids.csv" as row
+fieldterminator '\t'
+create (n: Genres)
+set n = row
 ```
 
 Carga de especie csv:
 ```cypher
-
+load csv with headers from "https://raw.githubusercontent.com/MauricioVazquezM/NoSQL_Spring2023_Final_Project/main/DATA/species_ids.csv" as row
+fieldterminator "\t"
+create (n: Species)
+set n = row
 ```
 
 Carga de blood status csv:
 ```cypher
+load csv with headers from "https://raw.githubusercontent.com/MauricioVazquezM/NoSQL_Spring2023_Final_Project/main/DATA/bs_ids.csv" as row
+fieldterminator "\t"
+create (n: Blood_status)
+set n = row
+```
 
+Carga de characters csv:
+```cypher
+load csv with headers from "https://raw.githubusercontent.com/MauricioVazquezM/NoSQL_Spring2023_Final_Project/main/DATA/characters.csv" as row
+fieldterminator "\t"
+create (c:Characters)
+set n = row
 ```
 
 #### Haciendo las relaciones
