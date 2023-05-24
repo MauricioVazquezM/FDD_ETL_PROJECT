@@ -1,25 +1,189 @@
 especie	idsp
-missing	g0
-female	g1
-male	g2
-male  most likely 	g3
-males, females	g4
-male, female	g5
-males	g6
-male  likely 	g7
-females	g8
-four males, one female	g9
-unknown	g10
-males and females	g11
-female, male	g12
-male  as depicted in the tales of beedle the bard 	g13
-male  possibly 	g14
-male  father , female  mother 	g15
-female  likely 	g16
-3 males, 9 unknown gender	g17
-male, 2 females	g18
-female  mother , unknown  baby 	g19
-at least one boy	g20
-mixed	g21
-two girls, one boy	g22
-females, males	g23
+missing	sp0
+human	sp1
+abraxan	sp2
+spider	sp3
+peacock	sp4
+phoenix	sp5
+ferret	sp6
+owl	sp7
+goblin	sp8
+vampire	sp9
+human, ghost  possibly 	sp10
+humans	sp11
+hag	sp12
+chupacabra	sp13
+half human half veela	sp14
+veela	sp15
+acromantula	sp16
+human  obscurial 	sp17
+pygmy puff	sp18
+eagle owl	sp19
+deity	sp20
+ashwinder	sp21
+augurey	sp22
+human  werewolf 	sp23
+human, badger	sp24
+ghost  formerly human 	sp25
+centaur	sp26
+kneazle	sp27
+fruit bat	sp28
+rabbit	sp29
+billywig	sp30
+house elf	sp31
+ghoul	sp32
+human  formerly , ghost	sp33
+boa constrictor	sp34
+banshee	sp35
+wolf  offspring of two transformed werewolves 	sp36
+bowtruckle	sp37
+giant	sp38
+snowy owl	sp39
+hippogriff	sp40
+budgerigar	sp41
+hungarian horntail	sp42
+pony	sp43
+quintaped	sp44
+human, quintaped  possibly 	sp45
+chimaera	sp46
+chinese fireball	sp47
+birds	sp48
+common welsh green	sp49
+sphinxes	sp50
+half kneazle cat	sp51
+unknown  mythical or possible non being 	sp52
+veela or part veela	sp53
+toad	sp54
+human  veela ancestry 	sp55
+demiguise	sp56
+doxy	sp57
+human, ferret  briefly 	sp58
+shrunken head	sp59
+parrot	sp60
+tortoise	sp61
+dugbog	sp62
+part human	sp63
+great grey owl	sp64
+fairy	sp65
+boarhound	sp66
+ghost, human  formerly 	sp67
+frog	sp68
+human  goblin ancestry 	sp69
+three headed dog	sp70
+mooncalves	sp71
+forest troll	sp72
+human, part troll  possibly 	sp73
+fox	sp74
+fish  previously lily petal 	sp75
+thunderbird	sp76
+cat	sp77
+qilin	sp78
+giant dung beetle	sp79
+rat	sp80
+dog	sp81
+snake  with characteristics of dragons and basilisks 	sp82
+humans  formerly , ghosts	sp83
+gorilla	sp84
+dogs	sp85
+graphorn	sp86
+dragon  ukrainian ironbelly 	sp87
+giants	sp88
+goat	sp89
+poltergeist	sp90
+puffskein	sp91
+hebridean black	sp92
+screech owl	sp93
+basilisk	sp94
+murtlap	sp95
+fire crab	sp96
+hodag	sp97
+giant squid	sp98
+house elves	sp99
+mice	sp100
+hummingbird	sp101
+imp	sp102
+half elf	sp103
+crup	sp104
+human, deity  in christian belief 	sp105
+zouwu	sp106
+kelpie	sp107
+knarl	sp108
+tarantula	sp109
+leucrotta	sp110
+part vampire	sp111
+either long haired lurcher or irish wolfhound	sp112
+matagot	sp113
+selkie  merpeople 	sp114
+human, flobberworm  briefly , puffskein  briefly 	sp115
+unicorn	sp116
+hornbill, water goblet  briefly 	sp117
+human  formerly , haddock	sp118
+beastly human  possibly , creature  possibly 	sp119
+mooncalf	sp120
+snake	sp121
+adder	sp122
+mountain troll	sp123
+part kneazle cat	sp124
+manticore	sp125
+human  maledictus affliction  formerly snake	sp126
+newt	sp127
+troll	sp128
+homo amphibia  purportedly 	sp129
+norwegian ridgeback	sp130
+donkey	sp131
+half human half giant	sp132
+human or giant	sp133
+human or giantess	sp134
+niffler	sp135
+monkey	sp136
+hippopotamus	sp137
+elephant	sp138
+tiger	sp139
+wolfhound	sp140
+scops owl	sp141
+giraffe	sp142
+mermaid	sp143
+half giant	sp144
+goblin, ghost	sp145
+ginger cat	sp146
+red cap	sp147
+dog  breed  bulldog 	sp148
+crups	sp149
+occamy	sp150
+hound	sp151
+dog  puggle 	sp152
+sea serpent	sp153
+shrunken heads	sp154
+black cat	sp155
+nifflers	sp156
+human  transfigured to chicken 	sp157
+barn owl	sp158
+sphinx	sp159
+thestral	sp160
+humans, a werewolf	sp161
+animal ghost	sp162
+humans  formerly , hedgehogs	sp163
+griffin	sp164
+wampus cat	sp165
+red caps	sp166
+dragon  chinese fireball 	sp167
+unknown	sp168
+crow	sp169
+dragon  antipodean opaleye 	sp170
+dragon  common welsh green 	sp171
+dragon  swedish short snout 	sp172
+horse  formerly , ghost horse	sp173
+tawny owl	sp174
+merperson	sp175
+bulldogs	sp176
+goblin or house elf	sp177
+giant fire crab	sp178
+human, vampire  claimed 	sp179
+ogre  possibly 	sp180
+vampire, part vampire, or human	sp181
+human  voice 	sp182
+chickens	sp183
+pukwudgie	sp184
+human  werewolf traits 	sp185
+wyvern	sp186
+sheep	sp187
