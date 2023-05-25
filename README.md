@@ -8,9 +8,9 @@
 
 ## Equipo
 
-- [Mariana Luna Rocha](https://github.com/MarianaMoons), estudiante de la Licencitura en Ciencia de Datos en el ITAM.
-- [Carlos Elías Rivera Mercado](https://github.com/Carlos-Elias-Riv), estudiante de la Licencitura en Ciencia de Datos en el ITAM.
-- [Mauricio Vázquez Moran](https://github.com/MauricioVazquezM), estudiante de la Licencitura en Ciencia de Datos y la Licenciatura en Actuaría en el ITAM.
+- [Mariana Luna Rocha](https://github.com/MarianaMoons), estudiante de la Licenciatura en Ciencia de Datos en el ITAM.
+- [Carlos Elías Rivera Mercado](https://github.com/Carlos-Elias-Riv), estudiante de la Licenciatura en Ciencia de Datos en el ITAM.
+- [Mauricio Vázquez Moran](https://github.com/MauricioVazquezM), estudiante de la Licenciatura en Ciencia de Datos y Licenciatura en Actuaría en el ITAM.
   
 
 
@@ -38,7 +38,7 @@ El proyecto debe ser lo más reproducible posible. Por lo cual, se debe de entre
 
 ### Insercion a MongoDB
 
-Para la inserción de todos los caracteres del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['PotterScript'](CODE/PotterScript.py). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
+Para la inserción de todos los personajes del mundo de Harry Potter, conectamos con la API [PotterDB](https://potterdb.com/) a través del script de python ['PotterScript'](CODE/PotterScript.py). Por medio de la libreria 'requests', hacemos llamados a la API, antes mencionada, y absorvemos la informacion localmente. Una vez que hemos logrado obtener todos los documentos de tipo 'json' de la PotterDB API, son mandados a una base de datos no relacional a MongoDB bajo el nombre de 'characters'.
 
 ### Extract - Transform - Load ( ETL )
 
